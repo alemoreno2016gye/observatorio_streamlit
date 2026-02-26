@@ -69,9 +69,11 @@ Arquitectura de datos y aplicación analítica para monitorear comercio bilatera
 Ubicar archivos en:
 - `data/raw/exports/*.xlsx`
 - `data/raw/imports/*.xlsx`
-- `data/raw/china_imports.csv`
-- `data/raw/product_dictionary.csv`
-- `data/raw/sector_table.csv`
+- Panel China imports en `data/raw/` (CSV o Excel). Nombres soportados incluyen `china_imports.*`, `china imports.*`, `china_import_panel.*`, `importaciones_china.*` y **`panel_trademap.*`**.
+- Diccionario de productos en `data/raw/` (CSV o Excel). Nombres soportados incluyen `product_dictionary.*`, `product_dictionary_ec.*`, `diccionario_productos.*`, `diccionario_subpartidas.*` y **`diccionario_ecuador.*`**.
+- Tabla de sectores en `data/raw/` (CSV o Excel). Nombres soportados incluyen `sector_table.*`, `sector_mapping.*`, `tabla_sectores.*`, `sectores.*` y **`SECTORES.*`**.
+
+> Recomendación: aunque el pipeline detecta alias automáticamente, usa nombres estables para producción y evita caracteres especiales en nombres de archivo.
 
 ## Ejecución
 
